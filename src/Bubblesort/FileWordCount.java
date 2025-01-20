@@ -11,7 +11,7 @@ public class FileWordCount {
 	        int wordCount = 0;
 
 	        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-	            String line;
+	            String line;    
 	            while ((line = br.readLine()) != null) {
 	                String[] words = line.split("\\s+");
 	                wordCount += words.length;
